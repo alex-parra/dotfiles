@@ -4,8 +4,9 @@
   "window.newWindowDimensions": "maximized",
   "vsicons.dontShowNewVersionMessage": true,
   "telemetry.telemetryLevel": "off",
-  "[json][jsonc][javascript][javascriptreact][typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": false
   },
   "editor.formatOnSave": true,
   "editor.fontSize": 14,
@@ -18,15 +19,15 @@
   "editor.detectIndentation": false,
   "editor.dragAndDrop": false,
   "editor.foldingImportsByDefault": true,
-  "editor.linkedEditing": true,
+  "editor.linkedEditing": false,
+  "auto-rename-tag.activationOnLanguage": ["*"],
   "editor.rulers": [80, 120, 150],
   "editor.tabCompletion": "on",
   "editor.minimap.enabled": false,
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-  "workbench.editor.highlightModifiedTabs": true,
-  "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.highlightModifiedTabs": false,
   "workbench.colorCustomizations": {
     "[Default Dark+]": {
       "titleBar.activeBackground": "#111",
@@ -34,11 +35,13 @@
       "editorGroupHeader.tabsBackground": "#ffffff11",
       "tab.inactiveBackground": "#fff0",
       "tab.activeBackground": "#000",
+      "tab.activeBorderTop": "#007ACC",
+      "tab.border": "#000",
       "activityBar.background": "#111",
       "sideBar.background": "#000",
+      "editor.background": "#000",
       "editorLineNumber.foreground": "#ffffff22",
       "editorLineNumber.activeForeground": "#ffffff77",
-      "editor.background": "#000",
       "editorWhitespace.foreground": "#ffffff22",
       "editorIndentGuide.activeBackground": "#ffffff33",
       "editorIndentGuide.background": "#ffffff11",
@@ -50,5 +53,17 @@
   "gitlens.codeLens.enabled": false,
   "gitlens.statusBar.enabled": false,
   "gitlens.statusBar.alignment": "left",
-  "gitlens.hovers.enabled": false
+  "gitlens.hovers.enabled": false,
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "markdown-preview-enhanced.previewTheme": "github-dark.css",
+  "[json][jsonc][javascript][javascriptreact][typescript][typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.wordWrap": "off"
+  }
 }

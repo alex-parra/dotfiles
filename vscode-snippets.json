@@ -1,0 +1,14 @@
+{
+  "React Function Component TS": {
+    "prefix": "rfc",
+    "scope": "typescriptreact",
+    "body": [
+      "import React from 'react'",
+      "",
+      "export const $0: React.FC = () => {",
+      "  return <div></div>",
+      "}",
+      ""
+    ]
+  }
+}
