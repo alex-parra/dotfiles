@@ -47,7 +47,9 @@
       "editorIndentGuide.background": "#ffffff11",
       "editor.lineHighlightBackground": "#ffffff0d",
       "editor.lineHighlightBorder": "#fff0",
-      "editorRuler.foreground": "#ffffff11"
+      "editorRuler.foreground": "#ffffff11",
+      "editorInlayHint.parameterBackground": "#fff0",
+      "editorInlayHint.parameterForeground": "#ffffff88"
     }
   },
   "gitlens.codeLens.enabled": false,
@@ -63,7 +65,22 @@
   "[json][jsonc][javascript][javascriptreact][typescript][typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[css][scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[markdown]": {
-    "editor.wordWrap": "off"
-  }
+    "editor.wordWrap": "off",
+    "files.trimTrailingWhitespace": false
+  },
+  "javascript.inlayHints.parameterNames.enabled": "none",
+  "typescript.inlayHints.parameterNames.enabled": "none",
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.formatOnSave": true
+  },
+  "gopls": {
+    "ui.diagnostic.staticcheck": true
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "window.openFoldersInNewWindow": "on"
 }
